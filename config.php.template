@@ -1,0 +1,17 @@
+<?php
+/**
+ * Replace with actual configuration values.
+ */
+define('ACCOUNT_NAME', YOUR-TEMBOO-ACCOUNT-NAME); // your Login Account Name
+define('API_KEY_NAME', YOUR-TEMBOO-APPKEY-NAME); // go to My Account > Application Keys
+define('API_KEY_VALUE', YOUR-TEMBOO-APPKEY-VALUE); // go to My Account > Application Keys
+define('EVENTHASHTAG', DESIRED-HASHTAG); // without the "#"
+
+/**
+ * Log into your Temboo.com account and create a credential for each service you'd like to use
+ */
+define('FLICKR_CREDENTIAL','');
+define('IG_CREDENTIAL','');
+define('GOOGLE_PLUS_CREDENTIAL','');
+define('TWITTER_CREDENTIAL','');
+?>

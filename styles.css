@@ -1,0 +1,173 @@
+/* undohtml.css */
+/* (CC) 2004 Tantek Celik. Some Rights Reserved.                  */
+/* http://creativecommons.org/licenses/by/2.0                     */
+/* This style sheet is licensed under a Creative Commons License. */
+body {
+  font-size: .8em;
+}
+ul, ol {
+  list-style: none;
+  }
+h1, h2, h3, h4, h5, h6, pre, code, p {
+  font-size: 1em;
+  }
+ul, ol, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, pre, 
+form, body, html, p, blockquote, fieldset, input {
+  padding: 0;
+  margin: 0;
+  }
+a img, :link img, :visited img {
+  border: none;
+  }
+address {
+  font-style: normal;
+  }
+/* END RESETS */
+
+/* HashTagMerge Default Styles */
+/* (CC) 2013 Jewel Mlnarik. Some Rights Reserved.                   */
+/* http://creativecommons.org/licenses/by/2.0                       */
+/* This style sheet is licensed under a Creative Commons License.   */
+/* Inspired by:                                                     */
+/*  http://www.colourlovers.com/palette/2780022/Push_Midwifery_Five */
+/*  http://nicolasgallagher.com/pure-css-speech-bubbles/demo/       */
+
+body{
+  font-family: garamond, georgia, serif;
+}
+h1 { 
+  font-family: 'Sacramento', cursive;
+  font-size: 8em;
+  color: #E0BC32; }
+h2.intro {
+  font-family: 'Sacramento', cursive;
+  font-size: 2.4em;
+  margin-left: 2em;
+  margin-top: -1.6em;
+  color: #000;
+}
+
+a{ color: #7EC7D0; }
+ul {list-style: none; padding: 0; margin: 0; postion:relative;}
+ul#htmPosts{ float: left;}
+ul#htmAuthors{ float: right; position: absolute; right: 2em; width: 150px; }
+ul li {list-style: none; display: inline; float: left; width: 320px; margin-right: 20px; position:relative; z-index: 1;}
+img.htmImg { width: 150px; float: left; margin-right: 10px;}
+
+li.enlarged { width: 450px; z-index: 2; position: block; margin: 0 auto; }
+li.enlarged img.htmImg { width: 400px; }
+
+#footer { 
+  position: fixed;
+  height: 20px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  bottom: 0;
+  z-index: 10;
+  padding-top: 5px;
+  padding-left: 10px;
+  text-align: center;
+}
+#highlight{
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  z-index: 5;
+  width: 500px;
+  margin-left: -250px;
+  background: #fff;
+  padding: 2em;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  display: none;
+}
+li.enlarged { width: 450px; z-index: 2; position: block; margin: 0 auto; }
+li.enlarged img.htmImg, #highlight img.htmImg  { width: 400px; }
+.show { display: inline-block; }
+.hide { display: none; }
+.clear { clear: both; height: 1px; }
+
+blockquote a{ color: #E0BC32; }
+#footer a, a.likes{ color: #E86797; }
+
+/* STYLE BOXES ... inspired by http://nicolasgallagher.com/pure-css-speech-bubbles/demo/ */
+/* TWITTER */
+li.twitter blockquote{
+  position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  color: #333;
+  background: linear-gradient(#E5E5E5, #E1E1E1);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+li.twitter blockquote:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 80px;
+  border: 0;
+  border-right-width: 10px;
+  border-bottom-width: 20px;
+  border-style: solid;
+  border-color: transparent #fff;
+  display: block;
+  width: 0;
+}
+li.twitter blockquote:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 60px;
+  border: 0;
+  border-right-width: 30px;
+  border-bottom-width: 20px;
+  border-style: solid;
+  border-color: transparent #E1E1E1;
+  display: block;
+  width: 0;
+}
+li.twitter p {
+  margin: -30px 0 0 100px;
+}
+
+/* FLICKR + IG */
+li.gplus blockquote, li.flickr blockquote, li.ig blockquote{
+  position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  color: #333;
+  background: linear-gradient(#E5E5E5, #E1E1E1);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+li.gplus blockquote:after, li.flickr blockquote:after, li.ig blockquote:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 80px;
+  border: 0;
+  border-right-width: 10px;
+  border-bottom-width: 20px;
+  border-style: solid;
+  border-color: transparent #fff;
+  display: block;
+  width: 0;
+}
+li.gplus blockquote:before, li.flickr blockquote:before, li.ig blockquote:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 60px;
+  border: 0;
+  border-right-width: 30px;
+  border-bottom-width: 20px;
+  border-style: solid;
+  border-color: transparent #E1E1E1;
+  display: block;
+  width: 0;
+}
+li.gplus p, li.flickr p, li.ig p {
+  margin: -30px 0 0 100px;
+}
