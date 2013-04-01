@@ -11,7 +11,7 @@
  * limitations under the License.
  *
  * @author jewel.mlnarik @juellez
- * @package HashTagMerge
+ * @package EventScrapbook
  */
 define('EVENTHASHTAG','bcp7');
 $hashtag = !empty($_GET['hashtag']) ? $_GET['hashtag'] : EVENTHASHTAG;
@@ -144,7 +144,7 @@ $hashtag = !empty($_GET['hashtag']) ? $_GET['hashtag'] : EVENTHASHTAG;
 </ul>
 
 <div id="footer">
-	<a href="http://github.com/juellez">grab code</a> | <a href="http://twitter.com/juellez">say hi</a> | <a href="http://temboo.com">powered by temboo</a>, <a href="http://twitter.com">twitter</a>, <a href="http://instagram.com">instagram</a>, <a href="http://plus.google.com">google+</a>, <a href="http://flickr.com">flickr</a>
+	<a href="https://github.com/juellez/EventScrapBook">grab code</a> | <a href="http://twitter.com/juellez">say hi</a> | <a href="http://temboo.com">powered by temboo</a>, <a href="http://twitter.com">twitter</a>, <a href="http://instagram.com">instagram</a>, <a href="http://plus.google.com">google+</a>, <a href="http://flickr.com">flickr</a>
 </div>
 
 </body>

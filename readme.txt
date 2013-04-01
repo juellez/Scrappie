@@ -1,7 +1,7 @@
-HashTagMerger by jewel.mlnarik
+Event Scrapbook by jewel.mlnarik
 
 Yet another side project you can check out @
-  http://htm.innovatepdx.com
+  http://esb.innovatepdx.com
   http://bcp7.innovatepdx.com
 
 LICENSE: Creative Commons 

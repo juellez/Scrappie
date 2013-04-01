@@ -11,7 +11,7 @@
  * limitations under the License.
  *
  * @author jewel.mlnarik @juellez
- * @package HashTagMerge
+ * @package EventScrapbook
  */
 require_once('./config.php');
 require_once('./php-sdk/src/temboo.php');
@@ -47,7 +47,6 @@ if( $_GET['s'] == 'flickr'){
         $list[] = $row;
     }
     jmeDisplay($list);
-    jmeCache($list,$hashtag); 
 }
 
 // instagram - ig
@@ -77,7 +76,6 @@ if( $_GET['s'] == 'ig'){
         $list[] = $row;
     }
     jmeDisplay($list);
-    jmeCache($list,$hashtag);  
 }
 
 // google plus - g
@@ -133,7 +131,6 @@ if( $_GET['s'] == 'g'){
         $list[] = $row;
     }
     jmeDisplay($list);
-    jmeCache($list,$hashtag);    
 }
 
 // twitter - t
@@ -142,7 +139,7 @@ if( $_GET['s'] == 't'){
     $tweets = new Twitter_Search_Tweets($session);
     $tweetsInputs = $tweets->newInputs();
     $tweetsInputs->setCredential(TWITTER_CREDENTIAL);
-    $tweetsInputs->setCount("100")->setQuery("#".$hashtag)->setIncludeEntities("true");
+    $tweetsInputs->setCount("200")->setQuery("#".$hashtag)->setIncludeEntities("true");
     $searchResults = $tweets->execute($tweetsInputs)->getResults();
     $searchResultsJSON = json_decode($searchResults->getResponse());
     $objects = $searchResultsJSON->statuses;
@@ -178,7 +175,6 @@ if( $_GET['s'] == 't'){
         $list[] = $row;
     }
     jmeDisplay($list);
-    jmeCache($list,$hashtag); 
 }
 
 function parse_links($string){ 
@@ -188,19 +184,5 @@ function parse_links($string){
 function jmeDisplay($list){
     header('Content-Type: application/json');
     echo json_encode($list);
-}
-
-function jmeCache($list){
-    foreach($list as $item){
-        // db write serialized(item) with a date field. that's it.
-    }
-}
-
-function jmeFetchCache($fromDate=null){
-    // fetch everything from optional date param. no other searching. bam.
-}
-
-function jmeFlushCache($fromDate=null){
-    // flush it
 }
 ?>
