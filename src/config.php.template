@@ -1,0 +1,73 @@
+<?php
+/**
+ * Replace with actual configuration values.
+ */
+define('ACCOUNT_NAME', YOUR-TEMBOO-ACCOUNT-NAME); // your Login Account Name
+define('API_KEY_NAME', YOUR-TEMBOO-APPKEY-NAME); // go to My Account > Application Keys
+define('API_KEY_VALUE', YOUR-TEMBOO-APPKEY-VALUE); // go to My Account > Application Keys
+
+/**
+ * Log into your Temboo.com account and create a credential for each service you'd like to use
+ */
+define('FLICKR_CREDENTIAL','');
+define('IG_CREDENTIAL','');
+define('GOOGLE_PLUS_CREDENTIAL','');
+define('TWITTER_CREDENTIAL','');
+define('FB_CREDENTIAL','');
+
+/**
+ * Singup with these providers and provied your assigned API Key
+ */
+// http://eventbrite.com/api to register - simple and quick
+define('EVENTBRITE_API_KEY','');
+// http://tumblr.com/api to register - simple and quick
+define('TUMBLR_API_KEY','');
+// https://developer.vimeo.com/apis to register - more complex than the last 2, requiring OAuth 2.0 setup
+define('VIMEO_API_KEY','');
+define('VIMEO_API_SECRET','');
+define('VIMEO_OAUTH_TOKEN','');
+define('VIMEO_OAUTH_TOKEN_SECRET','');
+
+$config = array();
+// list of services you want to use - keys match those used in scrappiefeed.php
+$config['services'] = array('ig','twitter','gplus','fb','flickr','tumblr','youtube','vimeo');
+$config['home'] = 'http://scrappie.us';
+$config['domain'] = 'scrappie.us';
+
+/**
+ * If you'd like to browse other events, list those here
+ * A few things to note: the various APIs use YOUR authentication
+ * to determine what you have access to, your location, etc. 
+ * So start with events that you've attended or can easily
+ * access public information for, to ease any testing and valid results.
+ */
+$config['events'] = array(
+$config['events'] = array(
+	'bcp7' => array(
+		'owner_twitter' => 'barcampportland',
+		'filter' => true, 
+		'name' => 'Barcamp Portland', // e.g. facebook event & group searches
+		'year' => '2013',
+		'location' => 'Portland, Oregon',
+		'previous_year' => 'bcp6',
+		'ditty' => 'Complete with an exciting maker faire, making beer, playing video games and dancing!',
+		'weight' => 0
+		)
+	);
+
+require_once('src/scrappie.php');
+/**
+ *                  ___                                                           
+ *              ,-'"   "`-.      
+ *            ,'_          `.                                                     
+ *           / / \  ,-       \      
+ *     __   | \_0 ---        |                                                   
+ *    /  |  |                | 
+ *    \  \  `--.______,-/    |                                                   
+ *  ___)  \  ,--""    ,/     | 
+ * /    _  \ \-_____,-      /       
+ * \__-/ \  | `.          ,'                      
+ *   \___/ <    '--------'                                                       
+ *    \__/\ |          
+ *     \__//
+*/

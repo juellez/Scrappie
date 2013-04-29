@@ -1,0 +1,10 @@
+/* Scrappie was made by Jewel Mlnarik in Portland, Oregon */
+/* Supported by Faye Purdum */
+/* Feedback from many... */
+/* scrappie.us */
+/* humanstxt.org */
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery, Foundation
+  Software: Sublime Text 2, Git
