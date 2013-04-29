@@ -5,6 +5,7 @@
 define('ACCOUNT_NAME', YOUR-TEMBOO-ACCOUNT-NAME); // your Login Account Name
 define('API_KEY_NAME', YOUR-TEMBOO-APPKEY-NAME); // go to My Account > Application Keys
 define('API_KEY_VALUE', YOUR-TEMBOO-APPKEY-VALUE); // go to My Account > Application Keys
+define('GOOGLE_ANALYTICS_UA','');
 
 /**
  * Log into your Temboo.com account and create a credential for each service you'd like to use
