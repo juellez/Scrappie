@@ -8,6 +8,7 @@ Scrappie is powered by a collection of APIs, many of which are in the [Temboo Li
 
  * Finding photos on [Instagram](https://temboo.com/library/Library/Instagram/)
  * Finding photos on [Flickr](https://temboo.com/library/Library/Flickr/)
+ * Searching for videos on [Vimeo](http://vimeo.com/api)
  * Searching for tweets on [Twitter](https://temboo.com/library/Library/Twitter/)
  * Searching for posts on [Google Plus](https://temboo.com/library/Library/Google/)
  * Searching for related events on [Facebook](https://temboo.com/library/Library/Facebook/)
@@ -15,14 +16,14 @@ Scrappie is powered by a collection of APIs, many of which are in the [Temboo Li
  * Searching for posts by tags on [Tumblr](http://tumblr.com/api)
  * Searching Eventbrite for events [Eventbrite](http://developer.eventbrite.com/api)
 
-Like a good gardener, I'd love to see this grow. I'd love to see additional services added in as time allows. (Hint, hint, pull request, hint, hint ...)
+Like a good gardener, I'd love to see this grow and have additional services added in as time allows. (Hint, hint, pull request, hint, hint ...)
 
 ###Contribute or Replicate
 
 To replicate Scrappie in your environment:
 
  1. Sign up for a free account at [temboo.com](http://temboo.com)
- 2. Fork or Clone the repo: `git clone git@github.com:juellez/scrappie.git`
+ 2. Fork or Clone the repo: `git clone git@github.com:juellez/Scrappie.git`
  3. Download the [Temboo PHP SDK](https://temboo.com/download) into your `scrappie/src` directory and make sure to inlcude the referenced library files:
   temboo.flickr.php
   temboo.google.php
@@ -40,7 +41,7 @@ Scrappie could use some UI prowess and general innovation. Do you have awesome C
 
  * Maximized for mobile - ability to preview full photos and posts without having to open another browser window.
  * Better scrolling - infinity scroll or more intuitive way to browse through more posts
- * Flickr user names - to avoid the rather robotic, id names returned by their API by default
+ * Better user names - to avoid the rather robotic, id names returned by some APIs by default
  * Events database - to get my proof of concept out quickly, I created a simple array of events that I was most interested in. I'd like to see these go into a database that can be populated via the public and/or Eventbrite API
 
 ###Why PHP? Why no framework? Why not another language?
@@ -49,7 +50,7 @@ The short story is that PHP is what I know best. I'm hoping to use Scrappie as a
 
 ###About Temboo and a Disclaimer
 
-While I'm currently employed at Temboo, this is a side project of mine only and in no way reflects the opinions, relationships, investments or development prowess of Temboo or my fellow co-workers.
+While I'm currently employed at Temboo, this is a side project of mine only and in no way reflects the opinions, relationships, investments or expertise of Temboo or my fellow co-workers.
 
 The Temboo SDK provides normalized access to 100+ APIs, databases and more so you can spend less time wrestling with API specifics and more time building what matters to you.
 
@@ -57,11 +58,11 @@ Learn more, and get the Temboo SDK in your favorite language, at [temboo.com](ht
 
 ###Contact Information
 
-Have a question or see a bug? Please contact me (not Temboo or any of the API providers) @juellez.
+Have a question or see a bug? Please contact me (not Temboo or any of the API providers) [@juellez](http://twitter.com/juellez).
 
 ###Copyright and License
 
-Copyright 2013, Jewel Mlnarik (@juellez)
+Copyright 2013, Jewel Mlnarik [@juellez](http://twitter.com/juellez)
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
