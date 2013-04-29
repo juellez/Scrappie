@@ -1,3 +1,9 @@
-
+db.php
 config.php
 php-sdk
+cache
+humans.txt
+robots.txt
+adodb5
+db.php
+.DS_Store
